@@ -22,25 +22,6 @@ target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
     - "target"
     - "dbt_modules"
-    
-account: "{{ source('salesforce', 'account') }}"   # or "{{ ref('salesforce_account_unioned'}) }}"
-opportunity: "{{ source('salesforce', 'opportunity') }}" 
-user: "{{ source('salesforce', 'user') }}"
-user_role: "{{ source('salesforce', 'user_role') }}"
-
-automation: "{{ source('mailchimp', 'automation') }}"   # or "{{ ref('mailchimp_automations_unioned'}) }}"
-automation_email: "{{ source('mailchimp', 'automation_email') }}" 
-automation_recipient: "{{ source('mailchimp', 'automation_recipient') }}"
-automation_recipient_activity: "{{ source('mailchimp', 'automation_recipient_activity') }}"
-campaign: "{{ source('mailchimp', 'campaign') }}"
-campaign_recipient: "{{ source('mailchimp', 'campaign_recipient') }}"
-campaign_recipient_activity: "{{ source('mailchimp', 'campaign_recipient_activity') }}"
-segment: "{{ source('mailchimp', 'segment') }}"
-segment_member: "{{ source('mailchimp', 'segment_member') }}"
-list: "{{ source('mailchimp', 'list') }}"
-member: "{{ source('mailchimp', 'member') }}"
-unsubscribe: "{{ source('mailchimp', 'unsubscribe') }}"
-
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
