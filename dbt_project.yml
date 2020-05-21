@@ -56,3 +56,5 @@ models:
           list: mailchimp.list
           member: mailchimp.member
           unsubscribe: mailchimp.unsubscribe
+          using_automations: False
+          using_segments: False
