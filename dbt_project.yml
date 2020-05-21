@@ -35,9 +35,9 @@ models:
       example:
           materialized: view
           
-    salesforce:
-        vars:
-            account: salesforce.account 
-            opportunity: salesforce.opportunity
-            user_role: salesforce.user_role
-            user: salesforce.user
+  salesforce:
+      vars:
+          account: salesforce.account 
+          opportunity: salesforce.opportunity
+          user_role: salesforce.user_role
+          user: salesforce.user
