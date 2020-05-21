@@ -41,3 +41,18 @@ models:
           opportunity: salesforce.opportunity
           user_role: salesforce.user_role
           user: salesforce.user
+          
+  mailchimp:
+      vars:
+          automation: mailchimp.automation
+          automation_email: mailchimp.automation_email
+          automation_recipient: mailchimp.automation_recipient
+          automation_recipient_activity: mailchimp.automation_recipient_activity
+          campaign: mailchimp.campaign
+          campaign_recipient: mailchimp.campaign_recipient
+          campaign_recipient_activity: mailchimp.campaign_recipient_activity
+          segment: mailchimp.segment
+          segment_member: mailchimp.segment_member
+          list: mailchimp.list
+          member: mailchimp.member
+          unsubscribe: mailchimp.unsubscribe
