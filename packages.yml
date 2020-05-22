@@ -2,8 +2,9 @@ packages:
   - package: fivetran/netsuite
     version: 0.1.0
     
-  - package: fivetran/salesforce
-    version: 0.1.0
+  - git: "https://github.com/fivetran/dbt_salesforce.git"
+    revision: postgres_compatibility_fix
+    warn-unpinned: false
     
   - package: fivetran/mailchimp
     version: 0.1.0
